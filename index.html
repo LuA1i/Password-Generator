@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Password generator app</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  Password Generator
-
-  P4$5W0rD!
-
-  Character Length
-
-  Include Uppercase Letters
-  Include Lowercase Letters
-  Include Numbers
-  Include Symbols
-
-  Strength
-
-  Generate
-
-</body>
+    <title>Frontend Mentor | Password generator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="password-container">
+        <div class="password">312312312FSDA</div>
+        <button class="password-copy">
+          <img src="./assets/images/icon-copy.svg" alt="" />
+        </button>
+      </div>
+      <div class="options-container">
+        <div class="length-container">
+          <div class="text">Character length</div>
+          <div class="length">10</div>
+        </div>
+        <input type="range" min="8" max="24" value="10" class="slider" />
+        <div class="div input-container">
+          <input type="checkbox" id="upper" />
+          <div class="">include UpperCase</div>
+        </div>
+        <div class="div input-container">
+          <input type="checkbox" id="lower" />
+          <div class="">include Lowercase</div>
+        </div>
+        <div class="div input-container">
+          <input type="checkbox" id="Numbers" />
+          <div class="">include Numbers</div>
+        </div>
+        <div class="div input-container">
+          <input type="checkbox" id="upper" />
+          <div class="">include Symbols</div>
+        </div>
+        <button class="btn-generator">Generate</button>
+      </div>
+    </div>
+  </body>
 </html>
